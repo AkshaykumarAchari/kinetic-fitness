@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090d0c">
+  <meta name="description" content="KINETIC — train smarter with free workout timers, 3D exercise guides and your private weekly fitness plan.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://apis.google.com; style-src 'self'; img-src 'self' data: https://lh3.googleusercontent.com; media-src 'self'; connect-src 'self' https://www.googleapis.com https://*.googleapis.com https://*.firebaseio.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firebaseinstallations.googleapis.com; frame-src https://accounts.google.com https://*.firebaseapp.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>KINETIC — Your space to get stronger</title>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="M6.5 6.5v11M3.5 9v6M17.5 6.5v11M20.5 9v6M6.5 12h11M2 9h3M19 9h3M2 15h3M19 15h3"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6M17 2v6M3 10h18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M3 12h4l3-7 4 14 3-7h4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5z" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5M5 9a8 8 0 0 1 13-3l2 1M4 17l2 1a8 8 0 0 0 13-3"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-log-out" viewBox="0 0 24 24"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5M14 8l4 4-4 4M8 12h10"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 22c-5 0-8-3-8-8 0-4 3-7 4-9 0 4 3 5 4 5 2-2 2-5 2-8 4 4 6 8 6 12 0 5-3 8-8 8z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 11h7l-1 9 10-12h-7l1-8z"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2" fill="#090d0c"/><circle cx="15" cy="17" r="2" fill="#090d0c"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <div class="app-shell">
+    <div class="mobile-shade" id="mobile-shade" hidden></div>
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#overview" aria-label="KINETIC homepage"><span class="brand-glyph"><svg><use href="#i-dumbbell"/></svg></span><span>KINETIC<span class="brand-dot">.</span><small>MOVE WITH PURPOSE</small></span></a>
+      <p class="nav-caption">WORKSPACE</p>
+      <nav class="side-nav">
+        <a class="nav-link selected" href="#overview" data-nav="overview"><svg><use href="#i-grid"/></svg><span>Overview</span></a>
+        <a class="nav-link" href="#exercises" data-nav="exercises"><svg><use href="#i-dumbbell"/></svg><span>Exercise library</span><span class="nav-count">10</span></a>
+        <a class="nav-link" href="#plan" data-nav="plan"><svg><use href="#i-calendar"/></svg><span>My workout plan</span><svg class="nav-lock"><use href="#i-lock"/></svg></a>
+        <a class="nav-link" href="#tools" data-nav="tools"><svg><use href="#i-clock"/></svg><span>Training tools</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-promo"><div class="side-promo-icon"><svg><use href="#i-bolt"/></svg></div><strong>Built for your next level.</strong><p>Every rep counts. Keep showing up.</p><a href="#exercises">Explore movements <span>↗</span></a></div>
+        <div class="side-footer">KINETIC / EDITION 01 <span>● SYSTEM ONLINE</span></div>
+      </div>
+    </aside>
+    <div class="page-wrap">
+      <header class="topbar">
+        <div class="topbar-left"><button id="menu-toggle" class="icon-button mobile-menu" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><svg><use href="#i-menu"/></svg></button><div><div class="breadcrumbs">YOUR SPACE <span>/</span> <span id="breadcrumb-current">OVERVIEW</span></div><strong id="page-header-title">Training dashboard</strong></div></div>
+        <div class="topbar-right"><span class="live-indicator"><span class="live-dot"></span> READY TO MOVE</span><span id="header-date" class="date-label"></span><button id="auth-button" class="auth-button" type="button"><svg><use href="#i-user"/></svg><span>Sign in with Google</span></button></div>
+      </header>
+      <main id="main">
+        <section id="overview" class="overview-section">
+          <div class="hero">
+            <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-mark"></span> YOUR DAILY DOSE OF PROGRESS <span class="eyebrow-number">/ 001</span></div><h1>STRONGER<br>STARTS <em>HERE.</em></h1><p>Every great result begins with showing up. Move your body, build your rhythm, own your progress.</p><div class="hero-actions"><a class="btn btn-primary" href="#exercises">Explore exercises <svg><use href="#i-arrow"/></svg></a><a class="btn btn-outline" href="#tools">Start a timer <svg><use href="#i-clock"/></svg></a></div><div class="hero-bottom"><span><i></i> NO SIGN-IN NEEDED TO START</span><span>EST. 2026 — BUILT TO MOVE</span></div></div>
+            <div class="hero-art" aria-hidden="true"><div class="hero-rings ring-one"></div><div class="hero-rings ring-two"></div><div class="hero-rings ring-three"></div><div class="hero-sigil">K<span>↗</span></div><div class="hero-art-label">PROGRESS<br>IN MOTION <span>↗</span></div><div class="hero-coordinate">LAT 00 / LONG 24<br>ALWAYS FORWARD</div></div>
+          </div>
+          <div class="section-top"><div><div class="mini-label">YOUR PULSE / AT A GLANCE</div><h2>Own your momentum.</h2></div><span class="section-aside">TODAY'S SNAPSHOT <span class="green-text">↗</span></span></div>
+          <div class="stats-grid">
+            <article class="stat-card"><div class="stat-icon"><svg><use href="#i-fire"/></svg></div><span class="stat-label">Exercises done today</span><div class="stat-main"><strong id="stat-completed">0</strong><span>moves</span></div><div class="stat-foot">Mark them in your plan <span>↗</span></div></article>
+            <article class="stat-card"><div class="stat-icon"><svg><use href="#i-clock"/></svg></div><span class="stat-label">Timer sessions</span><div class="stat-main"><strong id="stat-sessions">0</strong><span>sessions</span></div><div class="stat-foot">Tracked on this device <span>↗</span></div></article>
+            <article class="stat-card"><div class="stat-icon"><svg><use href="#i-activity"/></svg></div><span class="stat-label">Training time</span><div class="stat-main"><strong id="stat-minutes">0</strong><span>min</span></div><div class="stat-foot">Timer-based activity <span>↗</span></div></article>
+            <article class="stat-card accent-stat"><div class="stat-icon dark-icon"><svg><use href="#i-bolt"/></svg></div><span class="stat-label">Your next move</span><div class="stat-callout">SHOW UP.<br>LEVEL UP.</div><a href="#plan" class="stat-foot">View weekly plan <span>↗</span></a></article>
+          </div>
+          <div class="feature-grid">
+            <article class="panel progress-panel"><div class="panel-heading"><div><span class="mini-label">CONSISTENCY IS KEY</span><h3>This week's activity</h3></div><span class="tiny-tag">MON — SUN</span></div><div class="chart-body" id="activity-bars" role="img" aria-label="Workout completion per day this week"></div><div class="panel-note"><span class="green-dot"></span><span id="activity-note">Sign in to track completed exercises across devices.</span></div></article>
+            <article class="panel quick-panel"><div class="panel-heading"><div><span class="mini-label">GO WHEN YOU'RE READY</span><h3>Quick start</h3></div><span class="tiny-tag green-border">GUEST FRIENDLY</span></div><div class="quick-top"><div class="quick-symbol"><svg><use href="#i-clock"/></svg></div><div><span>Don't overthink it.</span><strong>Put in the work.</strong></div></div><p>A little movement goes a long way. Start a countdown, explore a new exercise, or build a plan of your own.</p><div class="quick-links"><a href="#tools">Open timer <svg><use href="#i-arrow"/></svg></a><a href="#exercises">View exercise guides <svg><use href="#i-arrow"/></svg></a></div></article>
+          </div>
+        </section>
+        <section id="exercises" class="section-spacing">
+          <div class="section-top"><div><div class="mini-label">KNOW YOUR MOVEMENT / 002</div><h2>Exercise library<span class="green-text">.</span></h2><p class="section-sub">10 essential movements. Every exercise includes a six-second animated 3D demonstration.</p></div><span class="section-aside">LEARN THE FORM. OWN THE REP.</span></div>
+          <div class="library-toolbar"><div class="search-field"><svg><use href="#i-search"/></svg><input id="exercise-search" type="search" placeholder="Find your movement..." aria-label="Search exercises" autocomplete="off"></div><div id="filter-pills" class="filter-pills" aria-label="Exercise category filter"></div></div>
+          <div class="exercise-grid" id="exercise-grid"></div>
+          <p id="exercise-empty" class="empty-state" hidden>No matching exercises. Try a different search or category.</p>
+        </section>
+        <section id="tools" class="section-spacing">
+          <div class="section-top"><div><div class="mini-label">YOUR PACE / 003</div><h2>Training tools<span class="green-text">.</span></h2><p class="section-sub">A timer for every rep. No account, no friction.</p></div><span class="section-aside">NO LOGIN REQUIRED</span></div>
+          <div class="tools-layout"><article class="panel timer-panel"><div class="panel-heading"><div><span class="mini-label">STAY IN YOUR ZONE</span><h3>Workout timer</h3></div><div class="mode-tabs" role="tablist" aria-label="Timer mode"><button class="mode-tab active" data-mode="countdown" role="tab" aria-selected="true">Countdown</button><button class="mode-tab" data-mode="stopwatch" role="tab" aria-selected="false">Stopwatch</button></div></div>
+            <div class="timer-disc" id="timer-disc"><div class="timer-disc-inner"><span id="timer-mode-label">TIME REMAINING</span><strong id="timer-display" role="timer" aria-label="Time remaining">01:00</strong><span id="timer-status">READY WHEN YOU ARE</span></div></div>
+            <div class="timer-presets" id="timer-presets"><button class="preset" data-seconds="30">30 SEC</button><button class="preset selected" data-seconds="60">1 MIN</button><button class="preset" data-seconds="90">90 SEC</button><button class="preset" data-seconds="300">5 MIN</button></div>
+            <div class="timer-controls"><button id="timer-start" class="btn btn-primary" type="button"><svg><use href="#i-play"/></svg><span>Start timer</span></button><button id="timer-reset" class="btn btn-outline" type="button"><svg><use href="#i-refresh"/></svg> Reset</button></div>
+          </article>
+          <article class="panel timer-help"><div class="mini-label">SMALL STEPS. BIG CHANGE.</div><h3>MAKE<br><em>EVERY SECOND</em><br>COUNT.</h3><p>Use the countdown between sets, or switch to stopwatch mode to time your training. Everything works without an account.</p><div class="timer-help-rule"></div><div class="tip-row"><span>01</span><div><strong>Rest intelligently</strong><p>Use 30–90 seconds between moderate sets as a starting point, adjusting to your needs.</p></div></div><div class="tip-row"><span>02</span><div><strong>Focus on technique</strong><p>Watch an exercise demonstration and follow its form cues before adding intensity.</p></div></div><div class="tip-row"><span>03</span><div><strong>Save when it matters</strong><p>Sign in with Google to build and sync a personal Monday–Sunday program.</p></div></div></article></div>
+        </section>
+        <section id="plan" class="section-spacing plan-section">
+          <div class="section-top"><div><div class="mini-label">YOUR BLUEPRINT / 004</div><h2>Your weekly plan<span class="green-text">.</span></h2><p class="section-sub">A different focus for every day. Make it yours and sync privately with Google.</p></div><span class="section-aside">7 DAYS. YOUR RULES.</span></div>
+          <div id="plan-gate" class="plan-gate panel"><div class="plan-gate-art"><div class="gate-ring"></div><svg><use href="#i-lock"/></svg></div><div><span class="mini-label">MAKE YOUR PROGRESS PERSONAL</span><h3>Your plan, your pace.</h3><p>Sign in with Google to create, customize, and securely sync your day-by-day workout routine. Timers and exercise guides stay free for everyone.</p><button id="plan-signin" class="btn btn-primary" type="button"><svg><use href="#i-user"/></svg> Continue with Google</button></div></div>
+          <div id="plan-loading" class="sync-state panel" hidden><span class="mini-label">PRIVATE WORKOUT PLAN</span><h3>Loading your workouts...</h3><p>Connecting securely to your Google account.</p></div>
+          <div id="plan-error" class="sync-state panel" hidden><span class="mini-label">SYNC UNAVAILABLE</span><h3>We couldn’t load your saved plan.</h3><p>For your safety, editing is disabled until your existing data can be loaded. Please retry when connected.</p><button id="plan-retry" type="button" class="btn btn-outline">Retry secure sync</button></div>
+          <div id="plan-app" class="plan-app panel" hidden><div class="plan-head"><div><span class="mini-label">YOUR PERSONAL PROGRAM</span><h3 id="plan-title">Monday • Strength</h3></div><span id="plan-sync" class="sync-label">Not saved yet</span></div><div id="day-tabs" class="day-tabs" role="tablist" aria-label="Workout day"></div><div class="plan-note">Tap a movement to watch the demonstration. Edit sets, reps and rest. Save changes to sync across your devices.</div><div id="plan-items" class="plan-items"></div><div class="plan-footer"><span id="plan-message">Your personal routine is private to your Google account.</span><button id="plan-save" class="btn btn-primary" type="button">Save this day <svg><use href="#i-arrow"/></svg></button></div></div>
+        </section>
+        <footer class="footer"><div><span class="footer-brand">KINETIC<span>.</span></span> BUILT TO MOVE, BUILT TO LAST.</div><span>TRAIN WELL. STAY CONSISTENT. © 2026</span></footer>
+      </main>
+    </div>
+  </div>
+  <nav class="bottom-nav" aria-label="Mobile navigation"><a href="#overview" data-nav="overview"><svg><use href="#i-grid"/></svg><span>Home</span></a><a href="#exercises" data-nav="exercises"><svg><use href="#i-dumbbell"/></svg><span>Moves</span></a><a href="#tools" data-nav="tools"><svg><use href="#i-clock"/></svg><span>Timer</span></a><a href="#plan" data-nav="plan"><svg><use href="#i-calendar"/></svg><span>My plan</span></a></nav>
+  <dialog class="exercise-dialog" id="exercise-dialog" aria-labelledby="dialog-title"><button id="dialog-close" class="dialog-close" aria-label="Close exercise guide"><svg><use href="#i-x"/></svg></button><div class="dialog-layout"><div class="dialog-visual"><video id="dialog-video" muted loop autoplay playsinline controls preload="none"></video><span class="video-flag">3D MOTION GUIDE · 6 SEC LOOP</span></div><div class="dialog-copy"><span id="dialog-group" class="mini-label">MOVEMENT GUIDE</span><h2 id="dialog-title">Bodyweight Squat</h2><p id="dialog-target"></p><h4>FORM CHECKLIST</h4><ol id="dialog-cues"></ol><button id="dialog-add" class="btn btn-primary" type="button"><svg><use href="#i-plus"/></svg> Add to my day</button><p class="disclaimer">Stylized demonstrations are simplified visual references, not medical or coaching advice. Use appropriate loads and seek professional guidance if needed.</p></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

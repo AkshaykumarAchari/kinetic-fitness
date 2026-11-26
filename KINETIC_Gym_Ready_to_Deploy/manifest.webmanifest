@@ -1,0 +1,1 @@
+{"name":"KINETIC — Fitness Dashboard","short_name":"KINETIC","description":"A responsive workout timer, exercise guides and Google-synced fitness plans","start_url":"./","scope":"./","display":"standalone","background_color":"#090d0c","theme_color":"#090d0c","icons":[{"src":"assets/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]}
